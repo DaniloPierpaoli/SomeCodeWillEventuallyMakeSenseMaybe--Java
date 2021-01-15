@@ -1,9 +1,11 @@
-package academy.learnprogramming;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        int number = 10;
+        // Main method just to call and visualise the sumDigits method.
+        
+        int number = anyIntNumberHere;
 
         System.out.println("The sum of all digits in " + number+" = " + sumDigits(number));
 
@@ -12,6 +14,11 @@ public class Main {
 
 
     public static int sumDigits(int number){
+        
+        //Method returns -1 if the number contains less than 2 digits or it's below 0. Then it starts iterating through i, multiplied by 10 each cycle.
+        // It extracts the remainder of each digit and substracts it from the original number so that the remainder always refers to one digit. 
+        // The end of the loop returns the sum of all digits of any int number.
+        
         if (number < 10){
             return -1;
         }
